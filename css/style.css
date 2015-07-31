@@ -1,0 +1,80 @@
+body {
+  /*resets*/
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /*styles*/
+  background: #479ccf;
+  color: #fff;
+  font-family: "Avenir Next", sans-serif;
+}
+
+body *, body *::before, body *::after {
+  box-sizing: inherit;
+}
+
+.type {
+  font-size: 1.4em;
+}
+.type * {
+  font-size: inherit;
+}
+
+.container {
+}
+
+.image-container {
+  -moz-columns: 4 300px;
+  -webkit-columns: 4 300px;
+  columns: 4 300px;
+  column-fill: balance;
+
+  padding: 0 10px;
+}
+
+.column-item {
+  background: #fff;
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.column-item img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.form {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.form--three-quarters {
+  width: 75%;
+  margin: 10px auto;
+}
+
+.form__input {
+  border: none;
+  padding: 8px 15px;
+  margin: 10px 0;
+}
+
+.form__input--full {
+  width: 100%;
+}
+
+.button {
+  background: #fff;
+  color: #479ccf;
+  border: 1px solid #d3dbe2;
+  border-radius: 3px;
+  padding: 8px 15px;
+}
+
+.button--full {
+  width: 100%;
+}
