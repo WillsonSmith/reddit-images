@@ -123,7 +123,7 @@
       scroll_height = document.documentElement.scrollHeight;
       page_Y_offset = window.pageYOffset;
       client_height = document.documentElement.clientHeight;
-      if (scroll_height - (page_Y_offset + client_height) < 50) {
+      if (scroll_height - (page_Y_offset + client_height) < 50 && page_Y_offset > 0) {
         return getSubredditContent(saved_states.last_search, saved_states.after_id);
       }
     });

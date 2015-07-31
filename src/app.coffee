@@ -18,7 +18,7 @@ hashHandler = ->
         this.handle();
     handle: (hash) ->
       if hash
-        location.hash = hash
+        location.hash = hash;
       else
         getSubredditContent(location.hash.substr(1)) if location.hash;
   }
@@ -82,10 +82,10 @@ startFormListener = ->
 
 startScrollListener = ->
   window.addEventListener "scroll", ->
-    scroll_height = document.documentElement.scrollHeight
-    page_Y_offset = window.pageYOffset
-    client_height = document.documentElement.clientHeight
-    getSubredditContent(saved_states.last_search, saved_states.after_id) if scroll_height - (page_Y_offset + client_height) < 50;
+    scroll_height = document.documentElement.scrollHeight;
+    page_Y_offset = window.pageYOffset;
+    client_height = document.documentElement.clientHeight;
+    getSubredditContent(saved_states.last_search, saved_states.after_id) if scroll_height - (page_Y_offset + client_height) < 50 and page_Y_offset > 0;
 
 
 initialize = ->
