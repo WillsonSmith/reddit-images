@@ -1,0 +1,15 @@
+{
+  "name": "reddit-images",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "coffee --watch --compile --output ./public/js/ ./src/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script": "^1.9.3"
+  }
+}

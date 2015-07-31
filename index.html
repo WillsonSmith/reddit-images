@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body class="type">
+    <form id="subreddit-form" class="form form--three-quarters">
+      <label for="subreddit">Enter subreddit:</label>
+      <input type="text" name="subreddit" placeholder="enter a subreddit to search" class="form__input form__input--full" list="subreddits" />
+      <datalist id="subreddits">
+        <option value="funny"></option>
+        <option value="aww"></option>
+        <option value="pics"></option>
+        <option value="gaming"></option>
+        <option value="adviceanimals"></option>
+      </datalist>
+      <button type="submit" class="button">Get Images</button>
+    </form>
+  	<div id="container" class="container">
+  	</div>
+
+
+  <script type="text/javascript" src="public/js/app.js"></script>
+	</body>
+</html>
